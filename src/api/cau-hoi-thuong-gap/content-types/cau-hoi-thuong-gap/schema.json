@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "cau_hoi_thuong_gaps",
+  "info": {
+    "singularName": "cau-hoi-thuong-gap",
+    "pluralName": "cau-hoi-thuong-gaps",
+    "displayName": "Câu hỏi thường gặp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

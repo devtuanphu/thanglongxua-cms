@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "trang_chus",
+  "info": {
+    "singularName": "trang-chu",
+    "pluralName": "trang-chus",
+    "displayName": "Trang chủ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    },
+    "title": {
+      "type": "text"
+    },
+    "subTitle": {
+      "type": "text"
+    },
+    "destinations": {
+      "type": "text"
+    },
+    "bestPrice": {
+      "type": "text"
+    },
+    "topNotch": {
+      "type": "text"
+    },
+    "partnerItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.partner"
+    }
+  }
+}

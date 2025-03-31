@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tours",
+  "info": {
+    "singularName": "tour",
+    "pluralName": "tours",
+    "displayName": "Tour",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "time": {
+      "type": "text"
+    },
+    "maxPeople": {
+      "type": "integer"
+    },
+    "minAge": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "pickUpLocation": {
+      "type": "text"
+    },
+    "returnLocation": {
+      "type": "text"
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "default"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "originalPrice": {
+      "type": "string"
+    },
+    "isHome": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "discountPrice": {
+      "type": "string"
+    }
+  }
+}

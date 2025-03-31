@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "tin_tuc_pages",
+  "info": {
+    "singularName": "tin-tuc-page",
+    "pluralName": "tin-tuc-pages",
+    "displayName": "Tin Tức Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "share.seo"
+    }
+  }
+}
