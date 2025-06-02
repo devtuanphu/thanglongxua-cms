@@ -815,6 +815,7 @@ export interface ApiTourTour extends Schema.CollectionType {
       Attribute.Private;
     description: Attribute.Text;
     discountPrice: Attribute.String;
+    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     isHome: Attribute.Boolean & Attribute.DefaultTo<false>;
     maxPeople: Attribute.Integer;
     minAge: Attribute.String;
