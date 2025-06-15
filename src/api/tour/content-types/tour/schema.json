@@ -66,14 +66,46 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "rootCode": {
+      "type": "enumeration",
+      "enum": [
+        "Amazing",
+        "Herritage"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "ninhbinh",
+        "halong",
+        "hanoi"
+      ]
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.options"
+    },
+    "saleWithQuanity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "share.sale-with-quanity"
+    },
+    "booking": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::booking.booking",
+      "mappedBy": "tour"
     }
   }
 }

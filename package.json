@@ -10,14 +10,15 @@
     "strapi": "strapi",
     "deploy": "strapi deploy"
   },
-  "devDependencies": {},
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^3.0.9",
     "@strapi/plugin-cloud": "4.25.18",
     "@strapi/plugin-i18n": "4.25.18",
     "@strapi/plugin-users-permissions": "4.25.18",
     "@strapi/strapi": "4.25.18",
+    "dayjs": "^1.11.13",
     "mysql": "2.18.1",
+    "nodemailer": "^7.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
@@ -34,5 +35,8 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
+  }
 }

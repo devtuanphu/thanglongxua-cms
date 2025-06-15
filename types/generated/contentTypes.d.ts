@@ -462,6 +462,12 @@ export interface ApiBookingBooking extends Schema.CollectionType {
     statusPayment: Attribute.Enumeration<['Yes', 'No']> &
       Attribute.Required &
       Attribute.DefaultTo<'No'>;
+    total: Attribute.String;
+    tour: Attribute.Relation<
+      'api::booking.booking',
+      'oneToOne',
+      'api::tour.tour'
+    >;
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<
       'api::booking.booking',
@@ -803,6 +809,12 @@ export interface ApiTourTour extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
+    booking: Attribute.Relation<
+      'api::tour.tour',
+      'oneToOne',
+      'api::booking.booking'
+    >;
+    category: Attribute.Enumeration<['ninhbinh', 'halong', 'hanoi']>;
     content: Attribute.RichText &
       Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
@@ -819,10 +831,13 @@ export interface ApiTourTour extends Schema.CollectionType {
     isHome: Attribute.Boolean & Attribute.DefaultTo<false>;
     maxPeople: Attribute.Integer;
     minAge: Attribute.String;
+    options: Attribute.Component<'share.options', true>;
     originalPrice: Attribute.String;
     pickUpLocation: Attribute.Text;
     publishedAt: Attribute.DateTime;
     returnLocation: Attribute.Text;
+    rootCode: Attribute.Enumeration<['Amazing', 'Herritage']>;
+    saleWithQuanity: Attribute.Component<'share.sale-with-quanity', true>;
     seo: Attribute.Component<'share.seo'>;
     slug: Attribute.String & Attribute.Required;
     startTime: Attribute.String;

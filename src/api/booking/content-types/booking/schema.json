@@ -45,6 +45,15 @@
       ],
       "required": true,
       "default": "No"
+    },
+    "tour": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tour.tour",
+      "inversedBy": "booking"
+    },
+    "total": {
+      "type": "string"
     }
   }
 }

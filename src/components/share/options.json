@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_share_options",
+  "info": {
+    "displayName": "options"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

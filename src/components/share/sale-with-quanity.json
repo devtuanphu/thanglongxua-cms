@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_share_sale_with_quanities",
+  "info": {
+    "displayName": "saleWithQuanity"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "percentSale": {
+      "type": "integer"
+    }
+  }
+}
