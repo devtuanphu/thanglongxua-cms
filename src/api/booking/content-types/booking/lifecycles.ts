@@ -137,7 +137,7 @@ export default {
 
           <p>Thank you again for choosing us.</p>
 
-          <p style="margin-top: 40px;">Best regards,<br /><strong>Your Company Team</strong></p>
+          <p style="margin-top: 40px;">Best regards,<br /><strong>Thang Long Xua</strong></p>
 
           <hr style="margin-top: 40px;" />
           <p style="font-size: 12px; color: #888;">
