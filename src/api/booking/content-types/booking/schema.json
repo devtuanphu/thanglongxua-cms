@@ -49,8 +49,7 @@
     "tour": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::tour.tour",
-      "inversedBy": "booking"
+      "target": "api::tour.tour"
     },
     "total": {
       "type": "string"

@@ -54,16 +54,10 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "originalPrice": {
-      "type": "string"
-    },
     "isHome": {
       "type": "boolean",
       "default": false,
       "required": false
-    },
-    "discountPrice": {
-      "type": "string"
     },
     "image": {
       "type": "media",
@@ -100,12 +94,6 @@
       "type": "component",
       "repeatable": true,
       "component": "share.sale-with-quanity"
-    },
-    "booking": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::booking.booking",
-      "mappedBy": "tour"
     }
   }
 }

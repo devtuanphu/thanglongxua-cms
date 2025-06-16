@@ -809,11 +809,6 @@ export interface ApiTourTour extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    booking: Attribute.Relation<
-      'api::tour.tour',
-      'oneToOne',
-      'api::booking.booking'
-    >;
     category: Attribute.Enumeration<['ninhbinh', 'halong', 'hanoi']>;
     content: Attribute.RichText &
       Attribute.CustomField<
@@ -826,13 +821,11 @@ export interface ApiTourTour extends Schema.CollectionType {
     createdBy: Attribute.Relation<'api::tour.tour', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     description: Attribute.Text;
-    discountPrice: Attribute.String;
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     isHome: Attribute.Boolean & Attribute.DefaultTo<false>;
     maxPeople: Attribute.Integer;
     minAge: Attribute.String;
     options: Attribute.Component<'share.options', true>;
-    originalPrice: Attribute.String;
     pickUpLocation: Attribute.Text;
     publishedAt: Attribute.DateTime;
     returnLocation: Attribute.Text;
