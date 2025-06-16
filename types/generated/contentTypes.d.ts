@@ -455,7 +455,9 @@ export interface ApiBookingBooking extends Schema.CollectionType {
     name: Attribute.String;
     note: Attribute.Text;
     numberPeople: Attribute.Integer;
+    option: Attribute.Text;
     publishedAt: Attribute.DateTime;
+    root: Attribute.String;
     status: Attribute.Enumeration<['Pending', 'Approve', 'Cancle']> &
       Attribute.Required &
       Attribute.DefaultTo<'Pending'>;

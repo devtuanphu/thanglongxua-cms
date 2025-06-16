@@ -53,6 +53,12 @@
     },
     "total": {
       "type": "string"
+    },
+    "option": {
+      "type": "text"
+    },
+    "root": {
+      "type": "string"
     }
   }
 }
